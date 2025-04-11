@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Install PreAmbulo</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
-    <meta property="og:title" content="PreAmbulo">
-    <meta property="og:description" content="The most pleasant game on the Internet">
-    <meta property="og:image" content="images/icon.png">
-    <meta property="og:url" content="https://preambulo.marcher.com.uy">
-    <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">PreAmbulo</title>
+  <link rel="stylesheet" href="stylesss.css">
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <meta property="og:title" content="PreAmbulo">
+  <meta property="og:description" content="The most pleasant game on the Internet">
+  <meta property="og:image" content="images/icon.png">
+  <meta property="og:url" content="https://preambulo.marcher.com.uy">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
 </head>
-    <body>
-        <header>
-            <h1>Download and Install PreAmbulo</h1>
-        </header>
+<body>
 
-        <section class="steps">
-            <h2>Step-by-Step Guide</h2>
-                
-            <a href="preambulo.apk" class="download-button">Download APK</a>
+  <header>
+    <h1 id="header_title"></h1>
+  </header>
 
-            <div class="step">
-                <h3>Step 1: Download the APK</h3>
-                <p>Click the button above to download the APK file. You may receive a warning that this type of file can harm your device. Tap <strong>"Download anyway"</strong> to proceed.</p>
-                <img src="images/download-allow.png" alt="Download APK step" class="step-img">
-            </div>
+  <section class="steps">
+    <h2 id="guide_title"></h2>
 
-            <div class="step">
-                <h3>Step 2: Open the App</h3>
-                <p>Once the installation is complete, tap <strong>"Open"</strong> to launch the app.</p>
-                <img src="images/open-app.png" alt="Open the app" class="step-img">
-            </div>
+    <a href="preambulo.apk" class="download-button" id="download_button"></a>
 
-            <div class="step">
-                <h3>Step 3: Allow Chrome to Install Apps</h3>
-                <p>When trying to install the APK, you may see a notification asking you to allow Chrome to install unknown apps. Follow the instructions to enable <strong>"Allow from this source"</strong> to proceed with the installation.</p>
-                <img src="images/allow-installs-chrome.png" alt="Allow Chrome installs" class="step-img">
-            </div>
+    <div class="step">
+      <h3 id="step1_title"></h3>
+      <p id="step1_text"></p>
+      <img src="images/download-allow.png" alt="Download APK step" class="step-img">
+    </div>
 
-            <div class="step">
-                <h3>Step 4: Play</h3>
-                <p>After installing the App, enjoy it!</p>
-            </div>
+    <div class="step">
+      <h3 id="step2_title"></h3>
+      <p id="step2_text"></p>
+      <img src="images/open-app.png" alt="Open the app" class="step-img">
+    </div>
 
-        </section>
-    </body>
+    <div class="step">
+      <h3 id="step3_title"></h3>
+      <p id="step3_text"></p>
+      <img src="images/allow-installs-chrome.png" alt="Allow Chrome installs" class="step-img">
+    </div>
+
+    <div class="step">
+      <h3 id="step4_title"></h3>
+      <p id="step4_text"></p>
+    </div>
+    
+    <div id="language-switcher">
+      <button onclick="switchLang('en')" class="download-button">English</button>
+      <button onclick="switchLang('es')" class="download-button">Español</button>
+      <button onclick="switchLang('zh')" class="download-button">中文</button>
+    </div>
+  </section>
+
+  <script>
+    async function loadLanguage(lang) {
+      const response = await fetch(`lang/${lang}.json`);
+      const translations = await response.json();
+
+      Object.entries(translations).forEach(([key, value]) => {
+        const el = document.getElementById(key);
+        if (el) el.textContent = value;
+      });
+
+      // Optional: save selected language
+      localStorage.setItem("lang", lang);
+    }
+
+    function switchLang(lang) {
+      loadLanguage(lang);
+    }
+
+    // Load saved language or use browser default
+    const savedLang = localStorage.getItem("lang");
+    const browserLang = navigator.language.startsWith("es") ? "es"
+                     : navigator.language.startsWith("zh") ? "zh"
+                     : "en";
+
+    loadLanguage(savedLang || browserLang);
+  </script>
+</body>
 </html>
