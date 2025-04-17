@@ -4,16 +4,19 @@
     "guide_title": "Step-by-Step Guide",
     "download_button": "Download APK",
   
-    "step1_title": "Step 1: Download the APK",
+    "step0_title": "Step 1: Delete the existing App",
+    "step0_text": "If you previously downloaded the App from Google Play, you must uninstall it before continuing to install this version.",
+  
+    "step1_title": "Step 2: Download the APK",
     "step1_text": "Click the button above to download the APK file. You may receive a warning that this type of file can harm your device. Tap \"Download anyway\" to proceed.",
   
-    "step2_title": "Step 2: Open the App",
+    "step2_title": "Step 3: Open the App",
     "step2_text": "Once the installation is complete, tap \"Open\" to launch the app.",
   
-    "step3_title": "Step 3: Allow Chrome to Install Apps",
+    "step3_title": "Step 4: Allow Chrome to Install Apps",
     "step3_text": "When trying to install the APK, you may see a notification asking you to allow Chrome to install unknown apps. Follow the instructions to enable \"Allow from this source\" to proceed with the installation. You may need to uninstall the Play Store version before installing the full version.",
   
-    "step4_title": "Step 4: Play",
+    "step4_title": "Step 5: Play",
     "step4_text": "After installing the App, enjoy it!"
   }
   

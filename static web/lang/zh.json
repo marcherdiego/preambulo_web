@@ -3,17 +3,20 @@
     "header_title": "下载并安装 PreAmbulo",
     "guide_title": "分步指南",
     "download_button": "下载 APK",
+
+    "step0_title": "步骤 1：删除已有的应用",
+    "step0_text": "如果你之前从 Google Play 下载了该应用，请先卸载它，然后再安装此版本。",
   
-    "step1_title": "步骤 1：下载 APK 文件",
-    "step1_text": "点击上方按钮下载 APK 文件。系统可能会提示安全警告，请点击“仍要下载”继续。",
+    "step1_title": "步骤 2：下载 APK",
+    "step1_text": "点击上方按钮下载 APK 文件。你可能会收到提示，警告该文件可能会损害设备。点击“仍然下载”继续。",
   
-    "step2_title": "步骤 2：打开应用",
+    "step2_title": "步骤 3：打开应用",
     "step2_text": "安装完成后，点击“打开”启动应用程序。",
   
-    "step3_title": "步骤 3：允许 Chrome 安装应用",
-    "step3_text": "系统可能提示你允许 Chrome 安装未知来源的应用。请启用“允许来自此来源”。如果你已安装 Play 商店版本，请先卸载。",
+    "step3_title": "步骤 4：允许 Chrome 安装应用",
+    "step3_text": "在安装 APK 时，你可能会看到提示要求允许 Chrome 安装未知来源的应用。按照说明启用“允许此来源”继续安装。你可能需要先卸载 Play 商店版本。",
   
-    "step4_title": "步骤 4：开始游戏",
-    "step4_text": "安装完成后，开始享受游戏吧！"
+    "step4_title": "步骤 5：开始使用",
+    "step4_text": "安装完成后，尽情享受吧！"
   }
   

@@ -3,17 +3,20 @@
     "header_title": "Descargar e Instalar PreAmbulo",
     "guide_title": "Guía paso a paso",
     "download_button": "Descargar APK",
+
+    "step0_title": "Paso 1: Elimina la App existente",
+    "step0_text": "Si descargaste la App previamente desde Google Play, debes desinstalarla antes de continuar con esta versión.",
   
-    "step1_title": "Paso 1: Descargar el APK",
+    "step1_title": "Paso 2: Descargar el APK",
     "step1_text": "Haz clic en el botón de arriba para descargar el archivo APK. Es posible que recibas una advertencia. Toca \"Descargar de todos modos\" para continuar.",
   
-    "step2_title": "Paso 2: Abrir la App",
+    "step2_title": "Paso 3: Abrir la App",
     "step2_text": "Una vez completada la instalación, toca \"Abrir\" para lanzar la aplicación.",
   
-    "step3_title": "Paso 3: Permitir instalación desde Chrome",
+    "step3_title": "Paso 4: Permitir instalación desde Chrome",
     "step3_text": "Puede que se te pida permitir que Chrome instale aplicaciones desconocidas. Habilita \"Permitir desde esta fuente\". Es posible que necesites desinstalar la versión de Play Store antes de instalar la versión completa.",
   
-    "step4_title": "Paso 4: Jugar",
+    "step4_title": "Paso 5: Jugar",
     "step4_text": "Después de instalar la App, ¡disfrútala!"
   }
   
